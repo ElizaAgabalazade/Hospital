@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
+import doc1 from '../assets/img/doctor2_no_name.png';
+import doc2 from '../assets/img/doc2.png';
+import doc3 from '../assets/img/doc3.png';
+import doc4 from '../assets/img/doc4.png';
 import './Doctors.css';
 
 // Həkimlərin datası və şəkilləri
@@ -9,28 +13,27 @@ const doctorsData = [
     id: 1,
     name: "Dr. Nigar Muradova",
     specialty: "Qulaq Burun Boğaz cərrahı, Otonevroloq",
-    img: "./img/haqqimizda/doctor1.png"
+    img: doc1 // Import etdiyimiz dəyişən
   },
   {
     id: 2,
     name: "Dr. Kamilə Allahverdiyeva",
     specialty: "Qulaq Burun Boğaz cərrahı",
-    img: "./img/haqqimizda/doctor2.png"
+    img: doc2
   },
   {
     id: 3,
     name: "Dr. Kamilə Allahverdiyeva",
     specialty: "Qulaq Burun Boğaz həkimi",
-    img: "./img/haqqimizda/doctor3.png"
+    img: doc3
   },
   {
     id: 4,
     name: "Dr. Mahtaban Qədiməli",
     specialty: "Qulaq Burun Boğaz cərrahı",
-    img: "./img/haqqimizda/doctor4.png"
+    img: doc4
   }
 ];
-
 const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
