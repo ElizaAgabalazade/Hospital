@@ -158,3 +158,68 @@ header {
     width: 100%;
 }
 
+.dropdown_parent {
+    position: relative;
+}
+
+/* BİRİNCİ DROPDOWN */
+.toggle_part_1 {
+    position: absolute; /* Əsas sirr budur: digər nav-lara təsir etmir */
+    top: 100%;          /* "Haqqımızda"nın tam altına düşür */
+    left: 0;
+    background: #ffff;
+    border-radius: 10px;
+    z-index: 111111;
+    width: 250px;       /* Genişliyi bir az artıraq ki, mətnlər sığsın */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1); /* Səliqəli kölgə */
+    padding: 10px 0;
+}
+
+.toggle_part_1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Yazıları sola çəksək daha peşəkar görünər */
+}
+
+.toggle_part_1 li {
+    padding: 5px 20px;
+    position: relative; /* İkinci menyu üçün lazımdır */
+}
+
+/* İKİNCİ DROPDOWN (Mərkəzlərimiz açılan hissə) */
+.togglePart_1_hidden {
+    position: absolute;
+    top: 0;
+    left: 100%;         /* Birinci menyunun tam sağına açılır */
+    background: #FFF;
+    border-radius: 10px;
+    z-index: 111112;
+    width: 300px;
+    box-shadow: 5px 4px 15px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.togglePart_1_hidden ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Keçid effektləri */
+.toggle_part_1 ul li a, 
+.togglePart_1_hidden ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.toggle_part_1 ul li a:hover, 
+.togglePart_1_hidden ul li a:hover {
+    color: #0095DA;
+    transition: 0.3s ease;
+}
