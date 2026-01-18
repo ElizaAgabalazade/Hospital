@@ -565,3 +565,150 @@ section_1 {
 
 
 }
+@media(max-width:1280px){
+    /* Ümumi konteyner - hər şeyi mərkəzdə saxlayır */
+.home-container {
+    max-width: 1440px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ekran böyük olsa belə ortada qalsın */
+    overflow-x: hidden;
+}
+
+/* Section 1 */
+.section_1 {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_1 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    width: 50%;
+    padding: 0 5rem;
+    line-height: 1.2;
+}
+
+.button_png {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+/* Section 3 (Həkimlər) */
+.section_3 {
+    background: #00A6F2;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section_3_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Başlıq və düymələri ayırır */
+    padding: 0 10%;
+}
+
+.section_3_top h2 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Düymələri mütləq dəyərlərlə deyil, qrup şəklində sağa yığırıq */
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-btn {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Section 4 */
+.section_4 {
+    background: #F5F5F5;
+    padding: 60px 0;
+}
+
+.section_4_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 2rem;
+}
+
+.section_4_top h2 {
+    margin: 0;
+}
+
+/* Karusel strukturu */
+.carousel-wrapper, .section_4_carousel_wrapper {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel, .section_4_carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Həkim şəkilləri - ekranda 3 ədəd */
+.carousel img {
+    min-width: calc((100% - 40px) / 3);
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Məlumat kartları - ekranda 4 ədəd */
+.section_4_item {
+    flex: 0 0 calc((100% - 60px) / 4);
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Section 5 (Haqqımızda) */
+.section_5 {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.section_5_left { width: 50%; }
+.section_5_right { width: 50%; }
+.section_5_right img { width: 100%; border-radius: 15px; }
+
+/* Section 6 (Pasiyentlər) */
+.section_6_cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.section_6_1 {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    width: 30%;
+    position: relative;
+}
+}
