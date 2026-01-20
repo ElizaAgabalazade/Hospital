@@ -38,7 +38,7 @@ const DoctorDetail = () => {
                     {/* Alt: Statistika qutusu */}
                     <div className="sectiom1_right_bottom">
                         <div className="section_right_bottom_1">
-                            <img src={icon1} alt="Təcrübə"  className="icon_1" />
+                            <img src={icon1} alt="Təcrübə" className="icon_1" />
                             <div className="stat_text">
                                 <p>{doctor.experience || "5 il"}</p>
                                 <span>Təcrübə</span>
@@ -62,30 +62,30 @@ const DoctorDetail = () => {
                                 <span>Rəylər</span>
                             </div>
                         </div>
-                    </div> 
-                </div> 
+                    </div>
+                </div>
             </div>
             <div className="section_3-wwrapper">
-            {/* Tab Hissəsi */}
-            <div className="section_tab_menu">
-                <h3 className="active_tab">Məlumat</h3>
-                <hr className="tab_divider" />
-                <h3>Həkimin məqalələri</h3>
-                <h3>Rəylər</h3>
-            </div>
+                {/* Tab Hissəsi */}
+                <div className="section_tab_menu">
+                    <h3 className="active_tab">Məlumat</h3>
+                    <hr className="tab_divider" />
+                    <h3>Həkimin məqalələri</h3>
+                    <h3>Rəylər</h3>
+                </div>
 
-            {/* SECTION 3 - Vəzifə */}
-            <div className="detail_row gray_bg">
-                <div className="row_left"><h3>Vəzifə</h3></div>
-                <div className="row_right"><p>{doctor.specialty}</p></div>
-            </div>
+                {/* SECTION 3 - Vəzifə */}
+                <div className="detail_row gray_bg">
+                    <div className="row_left"><h3>Vəzifə</h3></div>
+                    <div className="row_right"><p>{doctor.specialty}</p></div>
+                </div>
 
-            {/* SECTION 4 - Mərkəz */}
-            <div className="detail_row">
-                <div className="row_left"><h3>Mərkəz</h3></div>
-                <div className="row_right"><p>{doctor.center || "Başgicəllənmə Mərkəzi"}</p></div>
+                {/* SECTION 4 - Mərkəz */}
+                <div className="detail_row">
+                    <div className="row_left"><h3>Mərkəz</h3></div>
+                    <div className="row_right"><p>{doctor.center || "Başgicəllənmə Mərkəzi"}</p></div>
+                </div>
             </div>
-</div>
             {/* SECTION 5 - Təhsil */}
             <div className="detail_row gray_bg education_section">
                 <div className="row_left"><h3>Təhsil</h3></div>

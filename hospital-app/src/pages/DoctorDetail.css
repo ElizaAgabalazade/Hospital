@@ -201,9 +201,11 @@
     .section_1 {
         display: flex;
         width: 100%;
-        align-items: center; /* Şəkil və sağ tərəfi ortalayır */
+        align-items: center;
+        /* Şəkil və sağ tərəfi ortalayır */
         justify-content: space-between;
-        background: transparent; /* Qara fonu yoxlamaq üçün qoymuşdunsa silə bilərsən */
+        background: transparent;
+        /* Qara fonu yoxlamaq üçün qoymuşdunsa silə bilərsən */
     }
 
     .section1_left {
@@ -212,21 +214,24 @@
         justify-content: center;
     }
 
+
     .section1_left img {
-        width: 90%; /* Şəkil sol tərəfi tam doldursun */
+        width: 90%;
+        /* Şəkil sol tərəfi tam doldursun */
         height: auto;
         border-radius: 15px;
     }
 
     .section1_right {
-        width: 60%; /* Sağ tərəfə daha çox yer veririk */
+        width: 60%;
         display: flex;
-        flex-direction: column; /* Top və Bottom elementlərini alt-alta yığır */
+        flex-direction: column;
         justify-content: center;
     }
 
     .section1_right_top {
-        margin-bottom: 2rem; /* Ad ilə ikonlar arasında məsafə */
+        margin-bottom: 2rem;
+        text-align: center;
     }
 
     .section1_right_top h3 {
@@ -241,28 +246,28 @@
         color: #555;
     }
 
-    /* BURAYA DİQQƏT: Klas adın JSX-də 'sectiom1' (m ilə) olduğu üçün belə yazıram */
     .sectiom1_right_bottom {
-        width: 90% !important; /* 50% çox dar idi, 90% etdik */
+        width: 90% !important;
         display: flex;
-        flex-direction: row; /* İkonlar öz daxilində yan-yana düzülsün */
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 15px;
+        padding: 11px;
         gap: 10px;
-        margin-top: 1rem;
         border: 1px solid #eee;
         border-radius: 12px;
     }
 
-    .section_right_bottom_1, 
-    .section_right_bottom_2, 
+    .section_right_bottom_1,
+    .section_right_bottom_2,
     .section_right_bottom_3 {
         display: flex;
         align-items: center;
         gap: 8px;
     }
-
+.section_tab_menu{
+    margin-top: 14rem;
+}
     .stat_text p {
         font-size: 16px !important;
         font-weight: bold;
@@ -275,54 +280,9 @@
     }
 
     /* Ayırıcı xətləri gizlətmək və ya kiçiltmək olar */
-    .hr_of_icon1_and2, .hr_of_icon {
+    .hr_of_icon1_and2,
+    .hr_of_icon {
         height: 30px;
         background-color: #ddd;
-    }
-}
-/* 1024px-dən kiçik ekranlar (Planşetlər üçün vacibdir) */
-@media (max-width: 1024px) {
-    .section_1 {
-        flex-direction: column;
-        /* Şəkil və məlumat alt-alta düşsün */
-        align-items: center;
-        text-align: center;
-    }
-
-    .section1_left,
-    .section1_right {
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .section1_left img {
-        width: 50%;
-        /* Planşetdə şəkil çox böyük olmasın */
-        margin-bottom: 20px;
-    }
-
-    .section1_right_top h3,
-    .section1_right_top p {
-        margin: 10px 0;
-    }
-
-    .sectiom1_right_bottom {
-        margin: 20px auto;
-        flex-wrap: wrap;
-        /* İkonlar sığmasa aşağı düşsün */
-    }
-
-    .detail_row {
-        flex-direction: column;
-        /* Başlıq və mətn alt-alta */
-    }
-
-    .row_left,
-    .row_right {
-        width: 100%;
-    }
-
-    .row_left h3 {
-        margin-bottom: 10px;
     }
 }
